@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imgs/screen.png</file>
+        <file>imgs/bgImg_blue.jpg</file>
+        <file>qss/cyan.qss</file>
+        <file>imgs/arrow.png</file>
+        <file>imgs/arrow-left.png</file>
+        <file>imgs/arrow-right.png</file>
+        <file>imgs/arrow-right-hover.png</file>
+        <file>imgs/arrow-left-hover.png</file>
+        <file>imgs/icon.png</file>
+        <file>imgs/logo.png</file>
+        <file>imgs/arrow-up.png</file>
+        <file>imgs/arrow-down.png</file>
+        <file>imgs/arrow-up-hover.png</file>
+        <file>imgs/arrow-down-hover.png</file>
+        <file>imgs/about.jpg</file>
+    </qresource>
+</RCC>

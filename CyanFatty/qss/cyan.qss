@@ -1,0 +1,318 @@
+/* cyan:59918f hover:74b0a9 gray:191919 white:#ffffff*/
+
+QLineEdit,QTextEdit,QGroupBox,QSpinBox,QFontCombobox
+{
+	border-width: 3px;
+	border-style: solid;
+	border-radius:8px;
+	border-color: #59918f;
+}
+QWidget
+{
+	background-color:#191919;
+}
+
+QLabel,QCheckBox,QRadioButton
+{
+	color:#ffffff;
+}
+
+
+QPushButton
+{
+	color:#ffffff;
+	background-color:#59918f;
+    height: 30px;
+	width:120px;
+	border-radius: 8px;
+}
+
+QPushButton#pushButton_fontColor:hover,#pushButton_outlineColor:hover,
+#pushButton_shadowColor:hover,#pushButton_textBgColor:hover
+{
+	border:1px solid #191919;
+}
+
+QGroupBox 
+{
+	color:#59918f;
+	margin:5px;
+	padding:5px;
+}
+QLineEdit
+{
+	color:#ffffff;
+	height:30px;
+}
+QTextEdit
+{
+	color:#ffffff;
+}
+
+
+
+QSlider {
+    padding: 2px;
+    height: 40px;
+}
+
+QSlider::groove:horizontal {
+    subcontrol-origin: content;
+    background: #59918f;
+	border-radius:8px;
+    height: 20px;
+}
+
+QSlider::handle:horizontal {
+    background-color:#393939;
+    width: 30px;
+    border-radius: 18px;
+	border:5px solid #59918f;
+    margin: -10px 0;
+}
+
+QSlider::handle:horizontal:hover {
+    background-color:#595959;
+}
+
+
+QSlider::sub-page:horizontal {
+    background-color:#191919;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+QSlider::add-page:horizontal {
+	background-color:#191919;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/*关于圆角：高度/2+边框宽度*/
+QProgressBar
+{
+	color:#ffffff;
+	border: 3px solid #59918f;
+	border-radius:18px;
+	background-color:#191919;
+	text-align: center;
+	height:30px;
+}
+
+QProgressBar::chunk
+{
+	background-color:#59918f;
+	border:2px solid #191919;
+	border-radius:15px;
+	
+}
+
+QRadioButton
+{
+
+}
+
+QRadioButton::indicator
+{
+	height:14;
+	width:14px;
+	border:3px solid #59918f;
+	background-color:#191919;
+	border-radius:10px;
+}
+
+/*Checked*/
+QRadioButton::indicator:checked
+{
+	background-color:#ffffff;
+}
+/*hover*/
+QPushButton:hover
+{
+	background-color:#74b0a9;
+	border:1px solid #191919;
+}
+
+QPushButton:pressed
+{
+	background-color:#74b0a9;
+	border:2px solid #191919;
+}
+
+QRadioButton::indicator:hover
+{
+	border:3px solid #74b0a9;
+}
+
+QPushButton:pressed
+{
+}
+
+/*要想让button对齐到margin,margin给1个像素就可以了，多了会挡住文字*/
+/*只需要调整button即可，箭头用图片*/
+
+QSpinBox
+{
+	color:#ffffff;
+	height:30px;
+	margin-left:1px;
+	margin-right:1px;
+	text-align:center;
+}
+QSpinBox::down-button, QSpinBox::up-button {
+    subcontrol-origin: margin;
+    width: 20px;
+    height: 30px;
+    background: #59918f;
+	
+	
+	border:3px solid #59918f;
+    /*border: 2px solid rgb(170, 170, 170);*/
+}
+
+QSpinBox::down-button {
+    subcontrol-position: center left;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	background-image:url(:/imgs/arrow-left.png);
+}
+
+QSpinBox::up-button {
+    subcontrol-position: center right;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	background-image:url(:/imgs/arrow-right.png);
+}
+
+
+QSpinBox::up-button:hover
+{
+
+	background-image:url(:/imgs/arrow-right-hover.png);
+}
+
+QSpinBox::down-button:hover
+{
+	background-image:url(:/imgs/arrow-left-hover.png);
+}	
+
+
+QSpinBox::up-button:pressed
+{
+
+	background-image:url(:/imgs/arrow-right.png);
+}
+
+QSpinBox::down-button:pressed
+{
+	background-image:url(:/imgs/arrow-left.png);
+}	
+
+
+QCombobox
+{
+	color:red;
+	background-color:green;
+}
+QFontComboBox
+{
+	height:30px;
+	border:3px solid #59918f;
+	color:#ffffff;
+	background-color:#191919;
+	border-radius:8px;
+}
+
+
+
+/* 下拉后，整个下拉窗体样式 */
+QFontComboBox QAbstractItemView {
+    outline: 0px solid gray;   /* 选定项的虚框 */
+    border: 3px solid #59918f;   /* 整个下拉窗体的边框 */
+    color: #ffffff;
+    background-color: #191919;   /* 整个下拉窗体的背景色 */
+    selection-background-color: #59918f;   /* 整个下拉窗体被选中项的背景色 */
+	width:60px;
+	border-radius:8px;
+}
+
+
+
+QScrollBar:vertical
+{
+	width:20px;
+	padding:2px;
+	padding-top:24px;
+	padding-bottom:24px;
+	border:2px solid #59918f;
+	border-radius:10px;
+}
+
+QScrollBar::handle:vertical
+{
+	
+	border-radius:5px;
+	background:#59918f;
+}
+
+QScrollBar::handle:vertical:hover
+{
+
+	background:#74b0a9;
+}
+
+
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical 
+{
+    background:#393939;
+    border-radius:4px;
+}
+
+QScrollBar::sub-line:vertical
+{
+	background-image:url(:/imgs/arrow-up.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	
+}
+
+QScrollBar::add-line:vertical
+{
+	background-image:url(:/imgs/arrow-down.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+QScrollBar::sub-line:vertical:hover
+{
+	background-image:url(:/imgs/arrow-up-hover.png);
+
+	
+}
+
+QScrollBar::add-line:vertical:hover
+{
+	background-image:url(:/imgs/arrow-down-hover.png);
+
+}
+
+/*
+QSpinBox::up-arrow,  QSpinBox::down-arrow {
+    subcontrol-origin: content;
+    subcontrol-position: center center;
+    width: 6px;
+    height: 6px;
+    image:url(:/imgs/arrow-left.png);
+}
+QSpinBox::up-arrow,  QSpinBox::down-arrow :pressed
+{
+
+    image:url(:/imgs/arrow-left.png);
+}
+QSpinBox::up-arrow,  QSpinBox::down-arrow :hover
+{
+
+    image:url(:/imgs/arrow-left-hover.png);
+}
+*/
